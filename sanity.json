@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "project": {
+    "name": "VR Café"
+  },
+  "api": {
+    "projectId": "byaeh17d",
+    "dataset": "production"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "dashboard-widget-netlify",
+    "@sanity/dashboard"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    },
+    {
+      "implements": "part:@sanity/dashboard/config",
+      "path": "src/dashboardConfig.js"
+    }
+  ]
+}
