@@ -31,8 +31,7 @@ export default {
         {
             title: 'Description', 
             name: 'text',
-            type: 'array', 
-            of: [{type: 'block'}]
+            type: 'text', 
         },
         {
             title: 'Editeur',
