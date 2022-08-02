@@ -29,6 +29,25 @@ export default {
             }
         },
         {
+            name:"players",
+            type:"string",
+            title:"players",
+        },
+        {
+            name:"difficulty",
+            title:"Difficulty",
+            type:'string',
+            options:{
+                list:[
+                    {title:"Easy", value:"easy"},
+                    {title:"Medium", value:"medium"},
+                    {title:"Hard", value:"hard"},
+                    {title:"Infinite", value:"infinite"},
+                ],
+            layout:'dropdown'
+            }
+        },
+        {
             title: 'Description', 
             name: 'text',
             type: 'text', 
