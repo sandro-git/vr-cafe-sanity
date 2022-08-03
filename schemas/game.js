@@ -42,7 +42,6 @@ export default {
                     {title:"Easy", value:"easy"},
                     {title:"Medium", value:"medium"},
                     {title:"Hard", value:"hard"},
-                    {title:"Infinite", value:"infinite"},
                 ],
             layout:'dropdown'
             }
