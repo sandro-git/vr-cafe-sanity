@@ -7,6 +7,19 @@ export default {
             name:"name",
             type:"string",
             title:"Name"
+        },
+        {
+            name:"image",
+            type:"image",
+            title:"Image",
+            fields:[
+                {
+                    name:"alt",
+                    type:"string",
+                    title:"Alternative Text"
+                }
+            ]
         }
-    ]
+    ],
+    
 }
