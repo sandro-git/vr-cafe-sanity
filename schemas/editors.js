@@ -19,6 +19,14 @@ export default {
                     title:"Alternative Text"
                 }
             ]
+        },
+        {
+            name:"slug",
+            type:"slug",
+            title:"slug",
+            options:{
+                source:"name"
+            }
         }
     ],
     
