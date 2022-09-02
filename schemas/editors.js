@@ -21,12 +21,9 @@ export default {
             ]
         },
         {
-            name:"slug",
-            type:"slug",
-            title:"slug",
-            options:{
-                source:"name"
-            }
+            name:"link",
+            type:"string",
+            title:"Lien Editeur",
         }
     ],
     
