@@ -21,6 +21,11 @@ export default {
             ]
         },
         {
+            name:"url",
+            type:"string",
+            title:"url"
+        },
+        {
             name:"slug",
             type:"slug",
             title:"slug",
