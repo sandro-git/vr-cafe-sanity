@@ -1,37 +1,33 @@
 export default {
-    name:"game",
-    type:"document",
-    title:"Game",
-    fields:[
+    name: "game",
+    type: "document",
+    title: "Game",
+    fields: [
         {
-            name:"name",
-            type:"string",
-            title:"Name"
+            name: "name",
+            type: "string",
+            title: "Name"
         },
         {
-            name:"image",
-            type:"image",
-            title:"Image",
-            fields:[
-                {
-                    name:"alt",
-                    type:"string",
-                    title:"Alternative Text"
-                }
-            ]
-        },
-        {
-            name:"slug",
-            type:"slug",
-            title:"slug",
-            options:{
-                source:"name"
+            name: "image",
+            type: "image",
+            title: "Image",
+            options: {
+                hotspot: true,
             }
         },
         {
-            name:"players",
-            type:"string",
-            title:"players",
+            name: "slug",
+            type: "slug",
+            title: "slug",
+            options: {
+                source: "name"
+            }
+        },
+        {
+            name: "players",
+            type: "string",
+            title: "players",
         },
         {
             title: 'Youtube URL',
@@ -39,28 +35,28 @@ export default {
             type: 'string',
         },
         {
-            name:"difficulty",
-            title:"Difficulty",
-            type:'string',
-            options:{
-                list:[
-                    {title:"Easy", value:"easy"},
-                    {title:"Medium", value:"medium"},
-                    {title:"Hard", value:"hard"},
+            name: "difficulty",
+            title: "Difficulty",
+            type: 'string',
+            options: {
+                list: [
+                    { title: "Easy", value: "easy" },
+                    { title: "Medium", value: "medium" },
+                    { title: "Hard", value: "hard" },
                 ],
-            layout:'dropdown'
+                layout: 'dropdown'
             }
         },
         {
-            title: 'Description', 
+            title: 'Description',
             name: 'text',
-            type: 'text', 
+            type: 'text',
         },
         {
             title: 'Editeur',
             name: 'editor',
             type: 'reference',
-            to: [{type: 'editors'}]
-          }
+            to: [{ type: 'editors' }]
+        }
     ]
 }
