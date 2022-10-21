@@ -8,11 +8,11 @@ export default {
             type: "string",
             title: "Name"
         },
-        {
-            type: "cloudinary.asset",
-            name: "cloudinaryImage",
-            description: "This asset is served from Cloudinary",
-        },
+        // {
+        //     type: "cloudinary.asset",
+        //     name: "cloudinaryImage",
+        //     description: "This asset is served from Cloudinary",
+        // },
         {
             name: "image",
             type: "image",
