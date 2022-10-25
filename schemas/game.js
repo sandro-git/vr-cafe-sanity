@@ -61,6 +61,22 @@ export default {
             name: 'editor',
             type: 'reference',
             to: [{type: 'editors'}]
-          }
+        },
+        {
+            title: "Type",
+            name: "type",
+            type:'string',
+            options: {
+                list: [
+                    { title: "escape", value: "escape" },
+                    { title: "arcade", value: "arcade" },
+                ],
+            }
+        },
+        {
+            title: "Multijoueur",
+            name: "Multijoueur",
+            type:'boolean'
+        }
     ]
 }
